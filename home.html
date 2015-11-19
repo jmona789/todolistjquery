@@ -12,31 +12,30 @@
         <div class="col-md-8">
           <h3>To Do</h3>
           <table class="table table-striped">
-            <tbody>
+            <tbody id="listTable">
               <tr>
                 <td>
-                <input type="checkbox" /> 
+                <input data-state="not-checked" class="checkboxes" type="checkbox" />
                 Finsh making this to-do list page
                 <button value="Delete" class="btn btn-danger btn-xs">Delete</button>
                 </td>
               </tr>
               <tr>
                 <td>
-                <input type="checkbox" /> 
+                <input data-state="not-checked" class="checkboxes" type="checkbox" />
                 Take a nap
                 <button class="btn btn-danger btn-xs">Delete</button>
                 </td>
-              </tr>
               <tr>
                 <td>
-                <input type="checkbox" /> 
+                <input data-state="not-checked" class="checkboxes" type="checkbox" />
                 Buy Groceries
                 <button class="btn btn-danger btn-xs">Delete</button>
                 </td>
               </tr>
               <tr>
                 <td>
-                <input type="checkbox" /> 
+                <input data-state="not-checked" class="checkboxes" type="checkbox" />
                 Cook Dinner
                 <button class="btn btn-danger btn-xs">Delete</button>
                 </td>
@@ -49,13 +48,11 @@
           <table>
             <tr>
               <td>
-                <form id="newItemForm">
-                  <input id="newItem" placeholder="Type To Do Item Here" type="text" />
-                </form>
-                </td>
-                <td>
+                <form>
+                  <input id="newItem" placeholder="Type To Do Item Here" autocomplete="off" type="text" />
                   <button id="addItemBtn" class="btn btn-primary btn-sm">Add</button>
                 </td>
+                </form>
               </tr>
             </table>
           </div>

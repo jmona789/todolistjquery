@@ -9,3 +9,19 @@
 input[type="checkbox"]{
   margin-right: 5px;
 }
+
+.btn-danger{
+  opacity: 0.3;
+}
+
+.btn-danger:hover{
+  opacity: 1.0;
+}
+
+.str{
+  text-decoration: line-through;
+}
+
+td:hover{
+ font-weight: bold;
+ ;
