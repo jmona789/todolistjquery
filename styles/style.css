@@ -21,7 +21,3 @@ input[type="checkbox"]{
 .str{
   text-decoration: line-through;
 }
-
-td:hover{
- font-weight: bold;
- ;

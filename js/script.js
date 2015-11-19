@@ -20,7 +20,7 @@ $(document).ready(function() {
     $(this).attr("data-state", "checked")
     }
     else{
-    $(this).parent().attr("class", "null")
+    $(this).parent().removeClass()
     $(this).attr("data-state", "not-checked")
     }
   });
