@@ -1,6 +1,6 @@
 $(document).ready(function() {
   $(document).on("click", ".btn-danger", function(){
-    $(this).parent().parent().remove()
+    $(this).parent().parent().remove();
   });
   $(".btn-primary").on("click", function(e){
     e.preventDefault();
@@ -9,19 +9,19 @@ $(document).ready(function() {
     var checkbox = $("<input>").attr("type", "checkbox").attr("class", "checkboxes").attr("data-state", "not-checked");
     var deleteBtn = $("<button>").addClass("btn btn-danger btn-xs").append("Delete");
     var itemTd = $("<td>").addClass("word-td").append(newItem).append(deleteBtn).prepend(checkbox);
-    newRow.append(itemTd)
+    newRow.append(itemTd);
     $("#listTable").append(newRow);
     $("#newItem").val("").focus();
   });
   $(document).on("click", ".checkboxes", function(){
-    var dataState = $(this).attr("data-state")
+    var dataState = $(this).attr("data-state");
     if(dataState === "not-checked"){
-    $(this).parent().attr("class", "str")
-    $(this).attr("data-state", "checked")
+    $(this).parent().attr("class", "str");
+    $(this).attr("data-state", "checked");
     }
     else{
-    $(this).parent().removeClass()
-    $(this).attr("data-state", "not-checked")
+    $(this).parent().removeClass();
+    $(this).attr("data-state", "not-checked");
     }
   });
 });
