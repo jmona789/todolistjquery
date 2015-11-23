@@ -16,12 +16,9 @@ $(document).ready(function() {
   $(document).on("click", ".checkboxes", function(){
     var dataState = $(this).attr("data-state");
     if(dataState === "not-checked"){
+    $(this).hide(500);
     $(this).parent().attr("class", "str");
     $(this).attr("data-state", "checked");
-    }
-    else{
-    $(this).parent().removeClass();
-    $(this).attr("data-state", "not-checked");
     }
   });
 });
